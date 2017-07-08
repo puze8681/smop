@@ -16,7 +16,7 @@ public class SplashActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         // TODO Auto-generated method stub
         super.onCreate(savedInstanceState);
-        Font.setGlobalFont(this, getWindow().getDecorView(), 'c');
+        Font.setGlobalFont(this, getWindow().getDecorView(), 'r');
         //폰트 설정
 
         requestWindowFeature(Window.FEATURE_NO_TITLE);
