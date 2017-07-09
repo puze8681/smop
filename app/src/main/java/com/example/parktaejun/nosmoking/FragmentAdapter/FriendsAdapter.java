@@ -8,6 +8,7 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import com.example.parktaejun.nosmoking.FragmentActivity.FriendsFragment;
+import com.example.parktaejun.nosmoking.FriendsList;
 import com.example.parktaejun.nosmoking.R;
 
 import java.util.List;
@@ -19,9 +20,9 @@ import java.util.List;
 public class FriendsAdapter extends BaseAdapter {
 
     private Context context;
-    private List<FriendsFragment> items;
+    private List<FriendsList> items;
 
-    public FriendsAdapter(Context context, List<FriendsFragment> items){
+    public FriendsAdapter(Context context, List<FriendsList> items){
         this.context = context;
         this.items = items;
     }
@@ -43,14 +44,15 @@ public class FriendsAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        View view;
+        View view = null;
 
         if(position == 0){
-            view = LayoutInflater.from(context).inflate(R.layout.iteam_search, null);
+            view = LayoutInflater.from(context).inflate(R.layout.item_search, null);
         }else {
-            view = LayoutInflater.from(context).inflate(R.layout.iteam_friends, null);
-            TextView name = (TextView) view.findViewById(R.id.name);
+            view = LayoutInflater.from(context).inflate(R.layout.item_friends, null);
+            TextView name = (TextView) view.findViewById(R.id.friends_name);
             name.setText(items.get(position).getName());
         }
+        return view;
     }
 }

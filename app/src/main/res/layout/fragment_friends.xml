@@ -1,60 +1,10 @@
-
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/activity_chat_inside"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:weightSum="10"
-    tools:context="com.example.parktaejun.">
-
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
-        app:theme="@style/ThemeOverlay.AppCompat.Light"
-        android:background="#36b37d"
-        android:titleTextColor="@color/white"
-        android:layout_width="match_parent"
-        android:layout_height="?android:attr/actionBarSize">
-    </android.support.v7.widget.Toolbar>
-
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
     <ListView
-        android:transcriptMode="alwaysScroll"
-        android:background="#ebebeb"
-        android:id="@+id/chatting_list"
+        android:id="@+id/friends_list"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="10">
+        android:layout_height="match_parent">
     </ListView>
-
-    <LinearLayout
-        android:weightSum="15"
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:background="#ebebeb">
-        <EditText
-            android:paddingLeft="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="7dp"
-            android:layout_marginBottom="7dp"
-            android:layout_weight="13"
-            android:id="@+id/text"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:textSize="15sp"
-            android:textColor="#000000"
-            android:textCursorDrawable="@drawable/chat_cursor"
-            android:background="#ffffff"/>
-        <Button
-            android:layout_margin="10dp"
-            android:layout_weight="2"
-            android:textColor="@color/colorPrimary"
-            android:background="@drawable/chat_back"
-            android:id="@+id/button"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            />
-    </LinearLayout>
 </LinearLayout>
