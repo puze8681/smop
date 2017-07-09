@@ -6,13 +6,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
 import com.example.parktaejun.nosmoking.FragmentAdapter.FriendsAdapter;
-import com.example.parktaejun.nosmoking.FriendsList;
-import com.example.parktaejun.nosmoking.Main.MainActivity;
+import com.example.parktaejun.nosmoking.Data.FriendsList;
 import com.example.parktaejun.nosmoking.R;
 
 import java.util.ArrayList;

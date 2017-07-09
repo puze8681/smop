@@ -1,4 +1,4 @@
-package com.example.parktaejun.nosmoking;
+package com.example.parktaejun.nosmoking.Data;
 
 /**
  * Created by parktaejun on 2017. 7. 9..

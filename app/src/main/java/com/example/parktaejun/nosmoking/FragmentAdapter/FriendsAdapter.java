@@ -7,8 +7,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.example.parktaejun.nosmoking.FragmentActivity.FriendsFragment;
-import com.example.parktaejun.nosmoking.FriendsList;
+import com.example.parktaejun.nosmoking.Data.FriendsList;
 import com.example.parktaejun.nosmoking.R;
 
 import java.util.List;
